@@ -3,16 +3,6 @@
 一个可以直接跑起来的弹幕射击原型：2D、像素风、自己发射子弹、躲避敌方弹幕。
 **所有视觉都是运行时程序化生成的像素 Sprite，不需要任何美术资源。**
 
-## 怎么装进 Unity
-
-1. Unity Hub → New project → 模板选 **2D（Built-In）** 或 **Universal 2D**，随便起个名（比如 `Danmaku`）。
-2. 把本目录 `Assets/Scripts`、`Assets/Editor` 整个复制到新项目的 `Assets/` 下。
-3. 等 Unity 编译完（右下角转圈结束）。
-4. 顶部菜单栏出现 **「弹幕游戏」→「一键搭建场景」**，点它。
-5. 自动生成并打开 `Assets/Scenes/Main.unity`，直接点 **Play**。
-
-> 编辑视图里玩家和子弹看不见是正常的——它们的 Sprite 在运行时才生成，Play 之后全部出现。
-
 ## 操作
 
 | 按键 | 功能 |
@@ -32,7 +22,6 @@
 - `LevelDirector`：波次刷怪，难度随波数递增
 - `GameManager` + `HUD`：分数、生命、炸弹、GameOver、震屏
 - `ExplosionFx`：一次性像素爆散特效
-- `BuildSceneTool`：编辑器一键搭场景（省得手动拖拽）
 
 ## 后续可以加的东西
 
